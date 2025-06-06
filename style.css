@@ -4,6 +4,18 @@
     font-family: "Space Grotesk", sans-serif;
 }
 
+:root {
+    --primary-green-color: #206133;
+    --darker-green-color: #12361d;
+    --black-home-color: black;
+    --top-text-brown-color: #1f1919;
+    --home-grey-color: rgb(212, 212, 212);
+    --home-darker-grey-color: rgb(212, 212, 212);
+    --home-white-color: white;
+    --homecard-background-color: rgba(194, 201, 199, 0.322);
+    --home-blue-color: rgb(34, 133, 226);
+}
+
 
 body {
     background-color: #e9e9e9;
@@ -46,9 +58,15 @@ body {
 
 .topnav a {
     text-decoration: none;
-    color: black;
+    color: var(--black-home-color);
     font-weight: 500;
     font-size: 18px;
+    transition: .1 ease;
+}
+
+.nav a:hover {
+    scale: 1.05;
+    border-bottom: 1px solid var(--black-home-color);
 }
 
 .nav {
@@ -67,6 +85,12 @@ body {
 .top-content img {
     width: 500px;
     height: 500px;
+    transition: .5s ease-in-out;
+}
+
+.top-content img:hover {
+    scale: 1.05;
+    filter: drop-shadow(5px 5px 5px var(--black-home-color));
 }
 
 .top-content-text {
@@ -79,12 +103,13 @@ body {
 }
 
 .top-content-text h1 {
-    color: #514243;
+    color: var(--top-text-brown-color);
     font-size: 40px;
 }
 
-.top-content-text {
-    color: #473C3E;
+.top-content-text h2 {
+    color: var(--primary-green-color);
+    font-size: 28px;
     font-weight: 800
 }
 
@@ -93,54 +118,302 @@ body {
     flex-direction: column;
 }
 
-.home-experience-section{
-    padding: 200px 0px 0px 0px;
+.home-experience-section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 200px 0px 0px 0px;
     
 }
 
-.home-experience-content{
-    width: 800px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    gap: 100px;
+.experience-content h1 {
+    color: var(--top-text-brown-color);
+    font-weight: 500;
 }
 
-.experience-content {
+.home-experience-title {
+    display: flex;
+    justify-content: center;
+}
+
+.home-experience-title h1 {
+    color: var(--primary-green-color);
+    border-bottom: 2px solid var(--top-text-brown-color);
+}
+
+.home-experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.experience-content p {
+    font-size: 20px;
+}
+
+.technologies-section {
+    margin: 100px 0px 0px 0px;
+
+}
+
+.technologies-title {
+    display: flex;
+    justify-content: center;
+}
+
+.technologies-title h1{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    color: var(--primary-green-color);
+    border-bottom: var(--top-text-brown-color) 2px solid;
+}
+
+.technology {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 250px;
+    background-color: var(--home-grey-color);
+    border: var(--top-text-brown-color) 1.5px solid;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+.technology:hover {
+    scale: 1.05;
+    filter: drop-shadow(2px 2px 2px var(--black-home-color));
+}
+
+.technology img{
+    width: 100px;
+    height: 100px;
+}
+
+.technology p {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technologies-current-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.technologies-future-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-projects-title{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 70px 0px 0px 0px;
+    
+}
+
+.home-projects-title h1 {
+    color: var(--primary-green-color);
+    border-bottom: var(--darker-green-color) 2px solid;
+    width: fit-content;
+}
+
+.home-projects {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    width: 375px;
+    height: 475px;
+    border-radius: 15px;
+    border: var(--top-text-brown-color) 3px solid;
+    transition: .5s ease-in-out;
+    background-color: var(--homecard-background-color);
+}
+
+.home-card:hover {
+    scale: 1.02;
+}
+
+.home-card img {
+    width: 375px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.home-language-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 0px 0px 10px;
+}
+
+.home-card h1, .home-card p {
+    padding: 0px 10px 0px 10px;
+}
+
+.home-card h1 {
+    color: var(--primary-green-color);
+    font-weight: 600;
+}
+
+.home-card p{
+    font-weight: 600px;
+    color: var(--black-home-color);
+}
+
+.home-language-boxes h2 {
+    color: var(--darker-green-color);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer-container {
+    height: 300px;
+    background-color: var(--home-grey-color);
+    margin-top: 150px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.experience-title {
-    height: 150px;
-    width: 150px;
-    clip-path: circle(50%);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #514243;
-    font-weight: 600;
-    color: white;
+    margin: 20px 80px 0px 80px;
 }
 
-#first-experience-title{
-    font-size: 28px;
+.footer-logo img {
+    height: 100px;
+    width: 120px;
 }
 
+.bottom-footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px 0px 70px;
+    border-top: 2px solid var(--primary-green-color);
+    padding: 30px 0px 0px 0px;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.media-icons img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: var(--home-blue-color);
+}
+
+
+
+
+
+@media(max-width:1200px){
+    .topnav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    
+    .nav {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .home-projects {
+        flex-direction: column;
+    }
+}
 
 
 @media(max-width:752px){
     .top-content{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .top-content-text{
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .top-content img{
+        display: flex;
+        
+        height: 300px;
+        width: 300px;
+    }
+
+    .home-experience-section {
+        padding: 0px 0px 0px 0px;
+    }
+    .topnav {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    
+    .nav {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .top-content-text {
+        padding: 0px;
+    }
+
+    .home-experience-section {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .technologies-title {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .bottom-footer-content {
+        flex-direction: column;
+    }
+
+    .top-footer-content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        height: 500px;
     }
 }
