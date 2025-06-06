@@ -21,7 +21,6 @@ body {
     background-color: #e9e9e9;
     width: 100%;
     margin: 0px;
-    height: 2000px;
 }
 
 .topnav {
@@ -335,7 +334,7 @@ body {
     color: var(--home-blue-color);
 }
 
-
+/* MEDIA QUERIES  ##########################################################################################*/
 
 
 
@@ -416,4 +415,76 @@ body {
     .footer-container {
         height: 500px;
     }
+}
+
+
+/* ABOUT PAGE ########################################################################################## */
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 200px 0px 0px 0px;
+}
+
+.about-top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-top-content h1 {
+    color: var(--primary-green-color);
+    border-bottom: 1px solid var(--top-text-brown-color);
+    width: fit-content;
+}
+
+.about-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.about-location img {
+    width: 50px;
+    height: 50px;
+}
+
+.about-location p {
+    font-size: 24px;
+    color: var(--primary-green-color);
+}
+
+.location-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.map-img img{
+    height: 300px;
+    width: 300px;
+    border: 1px solid var(--top-text-brown-color);
+}
+
+.map-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-img p {
+    color: var(--home-blue-color);
+    margin: 0px;
+    font-size: 10px;
+}
+
+.about-main-text {
+    width: 750px;
+    font-size: 24px;
+    padding: 50px 0px 0px 0px;
 }
