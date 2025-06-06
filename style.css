@@ -14,6 +14,7 @@
     --home-white-color: white;
     --homecard-background-color: rgba(194, 201, 199, 0.322);
     --home-blue-color: rgb(34, 133, 226);
+    --nav-bar-color: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -38,7 +39,8 @@ body {
 }
 
 .topnav.black {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--nav-bar-color);
+    border-bottom: 2px solid var(--primary-green-color);
     transition: ease-in-out 0.2s;
 }
 
@@ -231,6 +233,7 @@ body {
 .home-projects {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     align-items: center;
@@ -338,7 +341,7 @@ body {
 
 
 
-@media(max-width:1200px){
+@media(max-width:1300px){
     .topnav {
         flex-direction: column;
         justify-content: center;
@@ -350,10 +353,6 @@ body {
         width: 100%;
         gap: 10px;
         justify-content: center;
-    }
-
-    .home-projects {
-        flex-direction: column;
     }
 }
 
