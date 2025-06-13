@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <link rel="icon" href="imgs/logo.png">
+    <title>Projects</title>
 </head>
 <body>
     <header>
@@ -15,14 +16,204 @@
             </div>
             <div class="nav" id="navbar">
                 <a href="home.html">HOME</a>
-                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="portfolio.html">PROJECTS</a>
                 <a href="contact.html">CONTACT</a>
                 <a href="about.html">ABOUT</a>
             </div>
         </div>
     </header>
-    <div class="port-page-content">
         
+    <div class="port-page-content">
+        <div class="port-top-content">
+            <div class="port-buttons">
+                <button onclick="projectFunction()">PROJECTS</button>
+                <button onclick="techStackFunction()">TECH STACK</button>
+            </div>
+            <div class="port-project-examples" id="port-project-1">
+                <div class="project-card" id="project-card-1">
+                    <div class="project-img">
+                        <img src="imgs/website-1-img.png" alt="">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-top-text">
+                            <div class="project-title-text">
+                                <h1>My First Website</h1>
+                                <h2>HTML, CSS, JavaScript</h2>
+                            </div>
+                            <p>2025</p>
+                        </div>
+                        <div class="project-bottom-text">
+                            <div class="project-main-text">
+                                <p>This was one of my first ever projects I worked on.</p>
+                                <p>It is a basic multi-page website.</p>
+                                <p>Contains some basic information and functionality like popups.</p>
+                            </div>
+                            <div class="project-bottom-buttons">
+                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a href="https://github.com/jamesm223/Module_1" target="_blank"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="port-project-examples" id="port-project-2">
+                <div class="project-card" id="project-card-2">
+                    <div class="project-img" id="project-img-2">
+                        <img src="imgs/Website-2-img.png" alt="">
+                    </div>
+                    <div class="project-text" id="project-text-2">
+                        <div class="project-top-text">
+                            <div class="project-title-text">
+                                <h1>My Second Website</h1>
+                                <h2>HTML, CSS, JavaScript</h2>
+                            </div>
+                            <p>2025</p>
+                        </div>
+                        <div class="project-bottom-text">
+                            <div class="project-main-text">
+                                <p>This was the second project I worked on.</p>
+                                <p>It is a basic multi-page website.</p>
+                                <p>Contains more advanced CSS with media quieries being implemented to give it better functionality when being used on a smaller screen.</p>
+                                <p>This was a big advancement from my previous skills.</p>
+                            </div>
+                            <div class="project-bottom-buttons">
+                                <a href="https://github.com/jamesm223/Module_2" target="_blank"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="port-project-examples" id="port-project-3">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="imgs/website-3-img.png" alt="">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-top-text">
+                            <div class="project-title-text">
+                                <h1>Advanced Portfolio Card</h1>
+                                <h2>HTML, CSS, JavaScript</h2>
+                            </div>
+                            <p>2025</p>
+                        </div>
+                        <div class="project-bottom-text">
+                            <div class="project-main-text">
+                                <p>This was a more recent project I worked on.</p>
+                                <p>It is a simple card that flips and uses animations and other features.</p>
+                                <p>This was made to help develop my skills and implement new features like clip-paths.</p>
+                            </div>
+                            <div class="project-bottom-buttons">
+                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a href="https://github.com/jamesm223/advanced_profile_card/tree/back-content" target="_blank"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="port-project-examples" id="port-project-4">
+                <div class="project-card" id="project-card-2">
+                    <div class="project-img" id="project-img-2">
+                        <img src="imgs/construction.png" alt="">
+                    </div>
+                    <div class="project-text" id="project-text-2">
+                        <div class="project-top-text">
+                            <div class="project-title-text">
+                                <h1>Work In Progress</h1>
+                                <h2>?</h2>
+                            </div>
+                            <p>2025</p>
+                        </div>
+                        <div class="project-bottom-text">
+                            <div class="project-main-text">
+                                <p>When this project is finished it will appear here.</p>
+                            </div>
+                            <div class="project-bottom-buttons">
+                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="technologies-section hidden" id="port-tech-section">
+            <div class="technologies-title">
+                <h1>Current Tech Stack</h1>
+            </div>
+            <div class="technologies-current-section">
+                <div class="technology" id="HTML-technology">
+                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML LOGO">
+                    <p>HTML</p>
+                </div>
+                <div class="technology" id="CSS-technology">
+                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS LOGO">
+                    <p>CSS</p>
+                </div>
+                <div class="technology" id="JS-technology">
+                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JS LOGO">
+                    <p>JavaScript</p>
+                </div>
+                <div class="technology" id="PYTHON-technology">
+                    <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000" alt="PYTHON LOGO">
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="technologies-title">
+                <h1>Future Additions to my Tech Stack</h1>
+            </div>
+            <div class="technologies-future-section" id="port-tech-future">
+                <div class="technology" id="REACT-technology">
+                    <img src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000" alt="REACT LOGO">
+                    <p>React Framework</p>
+                </div>
+                <div class="technology" id="TYPESCRIPT-technology">
+                    <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" alt="TYPESCRIPT LOGO">
+                    <p>TypeScript</p>
+                </div>
+                <div class="technology" id="NEXTJS-technology">
+                    <img src="https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000" alt="NEXTJS LOGO">
+                    <p>NEXT.js Framework</p>
+                </div>
+                <div class="technology" id="TAILWIND-technology">
+                    <img src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" alt="TAILWIND CSS LOGO">
+                    <p>Tailwind CSS</p>
+                </div>
+                <div class="technology" id="JQUERY-technology">
+                    <img src="https://img.icons8.com/?size=100&id=HKNzD81eiiSc&format=png&color=000000" alt="JQUERY LOGO">
+                    <p>jQuery</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="top-footer-content">
+                    <h1>Developing my Skills</h1>
+                    <div class="address">
+                        <p>Big Bite Creative Ltd,</p>
+                        <p>16-26 Albert Road,</p>
+                        <p>Middlesbrough, TS1 1PR</p>
+                    </div>
+                </div>
+                <div class="bottom-footer-content">
+                    <div class="footer-logo">
+                        <img src="/imgs/logo.png" alt="">
+                    </div>
+                    <div class="footer-text">
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="media-icons">
+                        <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="INSTAGRAM ICON">
+                        <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="FACEBOOK ICON">
+                        <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="GITHUB ICON">
+                        <img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt="INTERNET ICON">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
