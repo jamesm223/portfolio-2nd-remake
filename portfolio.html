@@ -15,10 +15,11 @@
                 <a href="home.html"><img src="/imgs/logo.png" alt=""></a>
             </div>
             <div class="nav" id="navbar">
-                <a href="home.html">HOME</a>
-                <a href="portfolio.html">PROJECTS</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="about.html">ABOUT</a>
+                <a href="home.html" id="nav-text">HOME</a>
+                <a href="portfolio.html" id="nav-text">PROJECTS</a>
+                <a href="contact.html" id="nav-text">CONTACT</a>
+                <a href="about.html" id="nav-text">ABOUT</a>
+                <button id="darkmode-btn"><img src="/imgs/darkmode.png" alt="" id="darkmode-img"></button>
             </div>
         </div>
     </header>
@@ -26,8 +27,8 @@
     <div class="port-page-content">
         <div class="port-top-content">
             <div class="port-buttons">
-                <button onclick="projectFunction()">PROJECTS</button>
-                <button onclick="techStackFunction()">TECH STACK</button>
+                <button onclick="projectFunction()" id="port-btn">PROJECTS</button>
+                <button onclick="techStackFunction()" id="port-btn">TECH STACK</button>
             </div>
             <div class="port-project-examples" id="port-project-1">
                 <div class="project-card" id="project-card-1">
@@ -37,7 +38,7 @@
                     <div class="project-text">
                         <div class="project-top-text">
                             <div class="project-title-text">
-                                <h1>My First Website</h1>
+                                <h1 id="project-card-p">My First Website</h1>
                                 <h2>HTML, CSS, JavaScript</h2>
                             </div>
                             <p>2025</p>
@@ -49,8 +50,8 @@
                                 <p>Contains some basic information and functionality like popups.</p>
                             </div>
                             <div class="project-bottom-buttons">
-                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
-                                <a href="https://github.com/jamesm223/Module_1" target="_blank"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                                <a  id="project-card-a"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a href="https://github.com/jamesm223/Module_1" target="_blank" id="project-card-a"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                     <div class="project-text" id="project-text-2">
                         <div class="project-top-text">
                             <div class="project-title-text">
-                                <h1>My Second Website</h1>
+                                <h1 id="project-card-p">My Second Website</h1>
                                 <h2>HTML, CSS, JavaScript</h2>
                             </div>
                             <p>2025</p>
@@ -77,8 +78,8 @@
                                 <p>This was a big advancement from my previous skills.</p>
                             </div>
                             <div class="project-bottom-buttons">
-                                <a href="https://github.com/jamesm223/Module_2" target="_blank"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
-                                <a><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                                <a href="https://github.com/jamesm223/Module_2" target="_blank" id="project-card-a"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a id="project-card-a"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                     <div class="project-text">
                         <div class="project-top-text">
                             <div class="project-title-text">
-                                <h1>Advanced Portfolio Card</h1>
+                                <h1 id="project-card-p">Advanced Portfolio Card</h1>
                                 <h2>HTML, CSS, JavaScript</h2>
                             </div>
                             <p>2025</p>
@@ -104,8 +105,8 @@
                                 <p>This was made to help develop my skills and implement new features like clip-paths.</p>
                             </div>
                             <div class="project-bottom-buttons">
-                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
-                                <a href="https://github.com/jamesm223/advanced_profile_card/tree/back-content" target="_blank"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                                <a id="project-card-a"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a href="https://github.com/jamesm223/advanced_profile_card/tree/back-content" target="_blank" id="project-card-a"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                     <div class="project-text" id="project-text-2">
                         <div class="project-top-text">
                             <div class="project-title-text">
-                                <h1>Work In Progress</h1>
+                                <h1 id="project-card-p">Work In Progress</h1>
                                 <h2>?</h2>
                             </div>
                             <p>2025</p>
@@ -129,8 +130,8 @@
                                 <p>When this project is finished it will appear here.</p>
                             </div>
                             <div class="project-bottom-buttons">
-                                <a><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
-                                <a><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
+                                <a id="project-card-a"><img src="https://img.icons8.com/?size=100&id=rU5dKTcsJ5Sv&format=png&color=000000" alt=""></a>
+                                <a id="project-card-a"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt=""></a>
                             </div>
                         </div>
                     </div>

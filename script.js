@@ -34,3 +34,12 @@ function projectFunction() {
   project4.classList.remove('hidden')
   techstack.classList.add('hidden')
 }
+
+const toggleBtn = document.getElementById('darkmode-btn');
+
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+});
