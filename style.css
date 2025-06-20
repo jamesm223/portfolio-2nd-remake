@@ -115,14 +115,32 @@ body.dark-mode .port-buttons button:hover {
     background: linear-gradient(to left, var(--primary-green-color) 50%, var(--darkmode-grey-color) 50%) right;
     background-size: 200%;
     transition: .5s ease-in-out;
-    color: white;
+    color: var(--home-white-color);
 }
 
 body.dark-mode #about-h1 {
     border-bottom: var(--darkmode-text-color) 1px solid;
 }
 
+body.dark-mode .popover-content {
+    background-color: var(--darkmode-background-color);
+}
 
+body.dark-mode .popover-content p {
+    color: var(--darkmode-text-color);
+}
+
+body.dark-mode .pop-close {
+    background-color: var(--darkmode-background-color);
+}
+
+body.dark-mode .popover-right-content input {
+    background-color: var(--darkmode-background-color);
+}
+
+body.dark-mode .popover-right-content textarea {
+    background-color: var(--darkmode-background-color);
+}
 /* Home Page ##################################################################### */
 
 
@@ -372,6 +390,7 @@ body {
     border: var(--top-text-brown-color) 2px solid;
     transition: .5s ease-in-out;
     background-color: var(--body-background-color);
+    filter: drop-shadow(2px 2px 2px var(--home-grey-color));
 }
 
 .home-card:hover {
@@ -727,6 +746,7 @@ body {
 .contact-information h1{
     font-weight: 600;
     padding: 0px 0px 20px 0px;
+    color: var(--primary-green-color);
 }
 
 .contact-information h2 {
@@ -776,6 +796,7 @@ body {
     height: 800px;
     border-radius: 20px;
     border: 5px solid var(--primary-green-color);
+    padding: 0px;
 }
 
 .popover-content {
@@ -952,7 +973,7 @@ body {
     z-index: 2;
 }
 
-.form-container:hover {
+.form-container:hover, .form-container:active {
     animation-play-state: paused;
 }
 
@@ -993,6 +1014,13 @@ body {
     transition-delay: 0.2s;
  
 } 
+
+.form-container:active .form-content {
+    height: 200px;
+    transform: translateY(-150px);
+    transition: .5s ease-in-out;
+    transition-delay: 0.2s;
+}
 
 .header{
     width: 100px;
@@ -1148,6 +1176,34 @@ body {
         display: flex;
         justify-content: center;
     }
+    .popover {
+        width: 600px;
+        height: fit-content;
+    }
+
+    .popover-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pop-close {
+        width: 600px;
+    }
+
+    .popover-left-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .popover-right-content {
+        width: 600px;
+    }
+
+    .contact-information h1 {
+        font-size: 24px;
+    }
 }
 
 
@@ -1208,4 +1264,6 @@ body {
     .footer-container {
         height: 500px;
     }
+
+    
 }

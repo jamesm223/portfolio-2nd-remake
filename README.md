@@ -25,3 +25,8 @@ Also including both footer and nav bar
 Page with two buttons at the top that change the content below between projects and my tech stack
 Inside the projects content have a filter for the different types of languages used within the projects
 Have the under development page for the filters without any projects
+
+# Contact Form
+
+Page with simple text about my contact ifno and address 
+Also have an animated popover form to send messages
